@@ -15,6 +15,8 @@
 
   ## Usage
   Type "npm install" to install the dependencies, including Inquirer. Next, type "npm run start" to run the program and answer the questions. Once the questions have been filed out, the file will be generated in the "generated_file" folder.
+  ![image](https://github.com/BethanyProctor/README-generator/assets/160694396/b44757e9-af31-461a-a3ec-33be313fa7d0)
+
   </br>
   Languages : Node Inquirer JavaScript Markdown
 
