@@ -1,35 +1,31 @@
-# a
-  Created by a ![Github Badge](https://img.shields.io/badge/license-a-blue.svg)
-  </br>
+# README GENERATOR
+  Created by Bethany Proctor ![Github Badge](https://img.shields.io/badge/license-MIT-blue.svg)
 
   ## Description
-  a
-  </br>
+  Generate README.md files
 
   ## Table of Contents
-  * [Installation](#Installation)
-  * [Usage](#Usage)
-  * [Credits](#Credits)
-  * [Contact Me](#Contact-Me)
-  * [License](#License)
-  </br>
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [Credits](#credits)
+  * [Contact Me](#contact-me)
+  * [License](#license)
 
   ## Installation
-  a
+  Node Inquirer
 
   ## Usage
-  a 
+  Type "npm install" to install the dependencies. Type "npm run start" to run the program and answer the questions. 
   </br>
-  a
+  Languages : Node Inquirer JavaScript Markdown
 
   ## Credits
-  a
-  </br>
+  Sheilds.io/badges for the badge generator. The professional README guide from GitHub
 
   ## Contact Me
-  Find me on GitHub: a
+  Find me on GitHub: BethanyProctor
   </br>
-  Email me: a
+  Email me: bethanyproctor@gmail.com
 
   ## License
-    Distributed under the a license.
+    Distributed under the MIT license.
