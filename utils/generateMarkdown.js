@@ -2,7 +2,7 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if (license !== "none") {
-    return `![Github Badge]https://img.shields.io/badge/license-${license}-blue.svg`
+    return `![Github Badge](https://img.shields.io/badge/license-${license}-blue.svg)`
   } else {
     return "" //if there is no license
   }
@@ -12,7 +12,7 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   if (license !== "none") {
-    return `[License](#license)`
+    return `* [License](#License)`
   } else {
     return ""
   }
@@ -22,9 +22,8 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if (license !== "none") {
-    return `## License  
-    Distributed under the ${license} license.
-    </br>`
+    return `## License
+    Distributed under the ${license} license.`
   } else {
     return ""
   }
@@ -41,11 +40,10 @@ function generateMarkdown(data) {
   </br>
 
   ## Table of Contents
-  </br>
-  [Installation](#installation)
-  [Usage](#usage)
-  [Credits](#credits)
-  [Contact Me](#contact me)
+  * [Installation](#Installation)
+  * [Usage](#Usage)
+  * [Credits](#Credits)
+  * [Contact Me](#Contact-Me)
   ${renderLicenseLink(data.license)}
   </br>
 
@@ -53,8 +51,9 @@ function generateMarkdown(data) {
   ${data.require}
 
   ## Usage
-  ${data.usage}
-  ${data.languages}
+  ${data.usage} 
+  </br>
+  Languages Utilized: ${data.languages}
 
   ## Credits
   ${data.credits}
@@ -62,6 +61,7 @@ function generateMarkdown(data) {
 
   ## Contact Me
   Find me on GitHub: ${data.github}
+  </br>
   Email me: ${data.email}
 
   ${renderLicenseSection(data.license)}

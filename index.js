@@ -1,6 +1,6 @@
 // TODO: Include packages needed for this application
 const fs = require('fs')
-const inquirer = require('inquirer')
+const inquirer = require("inquirer")
 const path = require('path');
 //access the other file
 const generateMarkdown = require('./utils/generateMarkdown');
@@ -44,7 +44,7 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'langauges',
+        name: 'languages',
         message: 'Please list all languages used in this project.'
     },
     {
@@ -66,10 +66,11 @@ function writeToFile(fileName, data) {
 
 // TODO: Create a function to initialize app
 function init() {
-    inquirer.createPromptModule(questions)
+    inquirer.prompt(questions)
     .then((responses) => {
         console.log("Generating README.md File..");
-        writeToFile("./generated_files/README.md", generateMarkdown({ ...responses }))
+        writeToFile("./generated_file/README.md", generateMarkdown({ ...responses }))
+        console.log("Your README.md file has been created!")
     })
 }
 
